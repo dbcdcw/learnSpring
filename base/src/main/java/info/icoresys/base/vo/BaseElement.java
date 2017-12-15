@@ -67,7 +67,7 @@ public class BaseElement<T extends BaseElement<T,E>, E extends BaseAttribute<E>>
 	}
 	/**
 	 * 添加属性
-	 * @param child
+	 * @param attribute
 	 */
 	public void addAttribute(E attribute) {
 		//TODO[需检查是否重复添加]
