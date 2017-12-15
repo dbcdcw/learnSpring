@@ -674,7 +674,7 @@
       <workItem from="1513238294233" duration="117000" />
       <workItem from="1513238603710" duration="5607000" />
       <workItem from="1513304999975" duration="63000" />
-      <workItem from="1513305088176" duration="2356000" />
+      <workItem from="1513305088176" duration="2437000" />
     </task>
     <task id="LOCAL-00001" summary="空">
       <created>1513073212245</created>
@@ -753,11 +753,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513308531707</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="添加Slf4j-Log4j2">
+      <created>1513308746137</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1513308746137</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21151000" />
+    <option name="totallyTimeSpent" value="21232000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
