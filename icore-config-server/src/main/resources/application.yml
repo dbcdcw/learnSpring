@@ -1,0 +1,17 @@
+server:
+  port: 18090
+spring:
+  application:
+    name: icore-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://10.88.2.63:28080/icoreConfig/icoreConfig.git
+          search-paths: config
+          username: icoreConfig
+          password: icoreConfig
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.31.116:18080/eureka/
