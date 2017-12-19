@@ -3,13 +3,15 @@ package info.icoresys.base.vo;
 import java.io.Serializable;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 /**
  * 属性定义
  * @author JeffCao
  *
  */
 @Data
-public class BaseAttribute<T extends BaseAttribute<T>> implements Serializable{
+@EqualsAndHashCode(callSuper=false)
+public class BaseAttribute<T extends BaseAttribute<T>> extends BaseVO implements Serializable{
 
 	private static final long serialVersionUID = -4752752690239507854L;
 	/**
