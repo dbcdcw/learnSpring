@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper=false)
-public class AssignedAttribute<T extends AssignedAttribute<T>> extends BaseAttribute<T> {
+public class AttributeDefine<T extends AttributeDefine<T>> extends BaseAttribute<T> {
 
 	private static final long serialVersionUID = -2393276675142549545L;
 

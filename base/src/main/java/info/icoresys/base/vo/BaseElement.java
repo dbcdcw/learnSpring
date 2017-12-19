@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * 元素，用来标识一个事物的框架构成。如数据字典、用户、菜单、角色等等，都是一个个元素，对于每个事物我们定义一个Element用来表示，关于Element具体的特征（属性），
@@ -14,7 +15,8 @@ import lombok.Data;
  *
  */
 @Data
-public class BaseElement<T extends BaseElement<T,E>, E extends BaseAttribute<E>> implements Serializable{
+@EqualsAndHashCode(callSuper=false)
+public class BaseElement<T extends BaseElement<T,E>, E extends BaseAttribute<E>> extends BaseVO implements Serializable{
 
 	private static final long serialVersionUID = 7533787307981692489L;
 
@@ -34,6 +36,14 @@ public class BaseElement<T extends BaseElement<T,E>, E extends BaseAttribute<E>>
 	 * 元素描述：用于界面显示
 	 */
 	private String description;
+	/**
+	 * className:对应的类名，具体业务对象的class完整包名路径
+	 */
+	private String className;
+	/**
+	 * 对应的模板编码，即对应Element的elementCode，一个元素可以作为另外一个元素的模板，用于相近元素定义或元素的扩展
+	 */
+	private String templateCode;
 	/**
 	 * 定义元素每次实例生成的最小个数
 	 */
