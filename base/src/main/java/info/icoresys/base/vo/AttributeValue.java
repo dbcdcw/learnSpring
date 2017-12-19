@@ -4,39 +4,30 @@ import java.io.Serializable;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-/**
- * 属性定义
- * @author JeffCao
- *
- */
+
 @Data
 @EqualsAndHashCode(callSuper=false)
-public class BaseAttribute<T extends BaseAttribute<T>> extends BaseVO implements Serializable{
-
-	private static final long serialVersionUID = -4752752690239507854L;
+public class AttributeValue extends BaseVO implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
 	/**
-	 * 属性编码
+	 * 对应Attribute的编码
 	 */
 	private String code;
 	/**
-	 * 属性名称，用于规则访问，定义时必须为字母组合
+	 * 对应Attribute的名称
 	 */
 	private String name;
 	/**
-	 * 属性描述：用于界面的展示
-	 */
-	private String description;
-	/**
-	 * 数据类型
+	 * 对应Attribute的数据类型
 	 */
 	private String dataType;
 	/**
-	 * 默认值
+	 * 属性值
 	 */
-	private Object value = null;
-	
+	private Object value;
 	/**
-	 * 获取默认值
+	 * 获取属性值
 	 * @return
 	 */
 	@SuppressWarnings("unchecked")
@@ -44,10 +35,11 @@ public class BaseAttribute<T extends BaseAttribute<T>> extends BaseVO implements
 		return (E) value;
 	}
 	/**
-	 * 设置默认值
+	 * 设置属性值
 	 * @param value
 	 */
 	public void setValue(Object value) {
 		this.value = value;
 	}
+	
 }

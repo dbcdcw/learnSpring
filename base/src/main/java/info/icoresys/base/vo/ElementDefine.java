@@ -12,9 +12,16 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper=false)
-public class AssignedElement<T extends AssignedElement<T, E>, E extends AssignedAttribute<E>> extends BaseElement<T, E> {
+public class ElementDefine<T extends ElementDefine<T, E>, E extends AttributeDefine<E>> extends BaseElement<T, E> {
 	
 	private static final long serialVersionUID = -3020254568294948767L;
 
+	/**
+	 * 指派方式：默认为定义
+	 */
 	private int assignType = ConstAssignType.DEFINE;
+	/**
+	 * 指派关系对应的关系表结构：用于两个元素间关系，需要单独存储在一张表的情况，一般为多对多的情况，如用户和角色的关系表
+	 */
+	private String relationCode = null;
 }
