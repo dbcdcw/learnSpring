@@ -21,3 +21,6 @@ eureka:
       defaultZone: http://192.168.31.116:18080/eureka/
 logging:
   config: classpath:log.xml
+management:
+  security:
+     enabled: false
