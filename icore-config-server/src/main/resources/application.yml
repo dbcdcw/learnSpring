@@ -11,6 +11,10 @@ spring:
           search-paths: config
           username: icoreConfig
           password: icoreConfig
+  rabbitmq:
+    addresses: 10.88.2.62:5672
+    username: icoreBus
+    password: icoreBus
 eureka:
   client:
     serviceUrl:
