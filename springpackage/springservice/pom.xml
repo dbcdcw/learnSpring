@@ -12,6 +12,7 @@
     <artifactId>spring-service</artifactId>
     <modules>
         <module>icore-service-demo</module>
+        <module>sysadmin</module>
     </modules>
     <dependencies>
         <dependency>
