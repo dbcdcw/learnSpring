@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: icore-config-server
+  application:
+    name: config-client-demo
+server:
+  port: 18100
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.1.145:18080/eureka/
